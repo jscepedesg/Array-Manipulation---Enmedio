@@ -1,0 +1,28 @@
+{
+  "name": "Array-Manipulation---Enmedio",
+  "version": "1.0.0",
+  "description": "Ejercicio para manipular una array bidimensional que después de realizar una serie de operaciones retorna el numero mayor.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist/ && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscepedesg/Array-Manipulation---Enmedio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jscepedesg/Array-Manipulation---Enmedio/issues"
+  },
+  "homepage": "https://github.com/jscepedesg/Array-Manipulation---Enmedio#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
+  }
+}
