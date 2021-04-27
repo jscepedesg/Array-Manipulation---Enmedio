@@ -25,7 +25,19 @@ export default class DataCapture implements DataCaptureInterface{
         console.log('Ingrese la longitud y el numero de operaciones: "Ejemplo: 1 3"');
         return new Promise((_resolve, reject) => {
             this.capture.question('', (response) => {
-                _resolve(response.split(" ").map(Number));
+                let data = response.split(" ").map(Number);
+                if(3 <= data[0] && data[0] <= Math.pow(10,7)) {
+                    if(1 <= data[1] && data[1] <= (2* Math.pow(10, 5))) {
+                        _resolve(response.split(" ").map(Number));
+                    } else {
+                        _resolve([]);
+                        console.error('Hay un dato que no cumple las condiciones');
+                    }
+                    
+                } else {
+                    _resolve([]);
+                    console.error('Hay un dato que no cumple las condiciones');
+                }
             });
         });
     }
@@ -37,8 +49,9 @@ export default class DataCapture implements DataCaptureInterface{
      * @returns 
      */
     private async fillArray(operation: Number): Promise<number[][]> {
+        this.arrayOperation = [];
         for(let i = 0; i < operation; i++) {
-            console.log(`Ingrese la fila ${i} del array: "Ejemplo: 1 2 100"`);
+            console.log(`Ingrese la fila ${i+1} del array: "Ejemplo: 1 2 100"`);
             let newArray: number[] = await new Promise((_resolve, reject) => {
                 this.capture.question('', (response) => {
                     _resolve(response.split(" ").map(Number));

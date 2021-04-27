@@ -9,7 +9,7 @@ export default class ManipulationArray implements ManipulationArrayInterface {
 
     
     /**
-     * 
+     * @description Método que opera un array con base en la longitud y queries optenidas.
      * @param n 
      * @param queries 
      * @returns 
