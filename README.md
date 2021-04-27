@@ -1,6 +1,29 @@
 # Array-Manipulation---Enmedio
 Ejercicio para manipular una array bidimensional que después de realizar una serie de operaciones retorna el numero mayor.
 
+## Dependencias
+
+- Instalar NodeJs ultima versión estable.
+- Instalar de manera globlar typescript, nodemon y ts-node ---- `npm i -g typescript nodemon ts-node`
+- No olvide descargar las dependencias del proyecto con: `npm i` en la raiz del proyecto.
+
+## Generar build
+
+Para generar la carpeta dis, que tendra el compilado del programa se debe estar en la raiz del proyecto y correr
+el comando: 
+
+`npm run build`
+
+Si desea ejecutarlo puede hacerlo dentro de la raiz del compilado con el comando:
+
+`node index.js`
+
+## Compilar entorno de desarrollo
+
+Si desea compilar el entorno de desarrollo en typescript es necesario habler cumplido los requerimientos dichos en el apartado de dependencias, si ya lo hizo, puede ejecutar el software con:
+
+`npm run start-dev`
+
 ## Descripción 
 
 Starting with a 1-indexed array of zeros and a list of operations, for each operation add a value to each of the array element between two given indices, inclusive. Once all operations have been performed, return the maximum value in your array. 
